@@ -44,27 +44,36 @@ document.onreadystatechange = function () {
             .setAttribute("style", "height:0px");
         }
       });
+
+      function toggle_mode() {
+        if (localStorage.getItem("mode") == "dark") {
+          document.body.classList.add("dark");
+          document.body.classList.remove("light");
+          document.getElementsByTagName("footer")[0].classList.add("dark");
+          document.getElementsByTagName("footer")[0].classList.remove("light");
+          document
+            .getElementsByClassName("filter-div")[0]
+            .classList.add("dark");
+          document
+            .getElementsByClassName("filter-div")[0]
+            .classList.remove("light");
+          document.getElementById("new-item-inp").classList.remove("inp-light");
+          document.getElementById("filter-up").classList.remove("light-icon");
+        } else {
+          document.body.classList.remove("dark");
+          document
+            .getElementsByClassName("filter-div")[0]
+            .classList.remove("dark");
+          document.body.classList.add("light");
+          document.getElementsByTagName("footer")[0].classList.remove("dark");
+          document.getElementsByTagName("footer")[0].classList.add("light");
+          document
+            .getElementsByClassName("filter-div")[0]
+            .classList.add("light");
+          document.getElementById("new-item-inp").classList.add("inp-light");
+          document.getElementById("filter-up").classList.add("light-icon");
+        }
+      }
     }, 500);
   }
 };
-function toggle_mode() {
-  if (localStorage.getItem("mode") == "dark") {
-    document.body.classList.add("dark");
-    document.body.classList.remove("light");
-    document.getElementsByTagName("footer")[0].classList.add("dark");
-    document.getElementsByTagName("footer")[0].classList.remove("light");
-    document.getElementsByClassName("filter-div")[0].classList.add("dark");
-    document.getElementsByClassName("filter-div")[0].classList.remove("light");
-    document.getElementById("new-item-inp").classList.remove("inp-light");
-    document.getElementById("filter-up").classList.remove("light-icon");
-  } else {
-    document.body.classList.remove("dark");
-    document.getElementsByClassName("filter-div")[0].classList.remove("dark");
-    document.body.classList.add("light");
-    document.getElementsByTagName("footer")[0].classList.remove("dark");
-    document.getElementsByTagName("footer")[0].classList.add("light");
-    document.getElementsByClassName("filter-div")[0].classList.add("light");
-    document.getElementById("new-item-inp").classList.add("inp-light");
-    document.getElementById("filter-up").classList.add("light-icon");
-  }
-}

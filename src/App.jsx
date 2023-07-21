@@ -69,19 +69,13 @@ export default function App() {
         todos = JSON.parse(localStorage.getItem('todo_list'));
         return todos.filter(f_todo => f_todo.completed == false)
       });
-      // console.log('p' + _isfilter.current);
     } if (val == 'All') {
       setTodos(() => {
         todos = JSON.parse(localStorage.getItem('todo_list'));
         return todos
       });
-      console.log('all' + _isfilter.current);
     }
   }
-  var sorted = todos.sort(function (a, b) { return b.date_time - a.date_time });
-  sorted.forEach((e) => {
-    console.log(e + e.date_time)
-  })
 
   return (
     <>
