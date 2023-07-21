@@ -6,6 +6,7 @@ export default defineConfig({
   server: {
     host: true
   },
+  base: "/todolist.github.io/",
   plugins: [react()],
 })
 
