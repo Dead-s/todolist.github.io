@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      media="all"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA9NJREFUWEflV21InWUYvu7nfd9z3EzFTJ2fHW1R8xx3shxutMiKioX0J1wE+yG53GbUj4h+9KPOGBF9MtbUlFa0GKT+WtE2RqMFQWGEbOksVvMoqdNss3WOO55z3ueKV5p0pgSvTjfogfff/XE9133f13O/gut85Drnx40LIASo+2uhvj4JHQL0cjG1IANdgFHRXPiYwFsD8Bt/a/jYigEgIP07izfAtF4ApArUbYGW8N5lB8B6GGfySuq0mLdDsEGgNgvZn2TyjWDL8AkHwKntRcWWx3rCFimhEsMtKNGcFtq9seTw4eoOJBz/uRKcfQ7euC57k6LqIMwXwajWfC96cfDjjYdwyTH+cUd5tbKwn0rdI4DpFgCpLwjRlfwz+mLwk/FoCoCvamHmVNz6pDKMnYCUC9mdtGNtwbbRn68kWioDBhkldG8sPvTZPAZmKX4E6dZaX51t8Dat7RPBlt96ANDtTd3Yz5sCpwl3A7Kco/dvgDeuEPU1566RxKoczdhk5QcT425odWO7IAP9jZk3a2/2LiXGQ6Du9LeG290EdWObAmDg2YwcO5GRTtN6WBlGE4EsaP1uoCXc4QTtq4fHzirKU0p54yZdl8+MG7Ztz0SqPjo/Kf8091wQJzjzfS8D6t7ZMRRmk+hEPPJ2ZcfEr7M6sKtsvTLUHgjXE+JaBwScgsbnmRPn9pR043KKDjgApKB8N4inAOQS+FZov9M/PnR8azdsx7j3Gd9dHo/xOhWDWByAiwAPX56ZCVV3jE6nAHDGr297wZ3wrHpeFCrB5MHIVOTTjYcuzKqgcwYbkBbxlBTRw9Viu3/KxVRJMzo9dceHk2PzSuAkcF7BtY0FxYZlZsSmp8ZqDv71h5uGWoyt60ZaTJL/8lkQgFMOhGY/p9VXToq76mGsyy2sEfHcByV5ihzWicRJf/vI6eUCMscAQ1D950s3iWXsIOQBAbJI/i7AF0zEDwTaR05da/rnj2F+2SsCadAivwA4C7AKZDbBfYH94X0DTbesoZW+hUoVku4XEkM4bSf1mZmeoePVP1y1kAw2+NKimeoAKI8Dei9FHRXNp0WwFZodFbmDL/WNld+9bAvJkS3wlpSXvSZKtkGzRwSnKWqzgGW0dYu/NfzWQGNBqe1N2yYGfIthQIGRBO3vzYnhzkA34iklcBowkFf6IMVspmCTQFaTvATwS2XH369oG/nOcXDW9VdDS+iGqyYrZQzZBGvAKq21YTwqIgUgz2noIz9NDPVckeMlpF7QdZ4OOEzcFIG5Lt8n0WhY+/1ISmiFf0yu9S1dK+H/CsDf70eYMH+nBy8AAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA9NJREFUWEflV21InWUYvu7nfd9z3EzFTJ2fHW1R8xx3shxutMiKioX0J1wE+yG53GbUj4h+9KPOGBF9MtbUlFa0GKT+WtE2RqMFQWGEbOksVvMoqdNss3WOO55z3ueKV5p0pgSvTjfogfff/XE9133f13O/gut85Drnx40LIASo+2uhvj4JHQL0cjG1IANdgFHRXPiYwFsD8Bt/a/jYigEgIP07izfAtF4ApArUbYGW8N5lB8B6GGfySuq0mLdDsEGgNgvZn2TyjWDL8AkHwKntRcWWx3rCFimhEsMtKNGcFtq9seTw4eoOJBz/uRKcfQ7euC57k6LqIMwXwajWfC96cfDjjYdwyTH+cUd5tbKwn0rdI4DpFgCpLwjRlfwz+mLwk/FoCoCvamHmVNz6pDKMnYCUC9mdtGNtwbbRn68kWioDBhkldG8sPvTZPAZmKX4E6dZaX51t8Dat7RPBlt96ANDtTd3Yz5sCpwl3A7Kco/dvgDeuEPU1566RxKoczdhk5QcT425odWO7IAP9jZk3a2/2LiXGQ6Du9LeG290EdWObAmDg2YwcO5GRTtN6WBlGE4EsaP1uoCXc4QTtq4fHzirKU0p54yZdl8+MG7Ztz0SqPjo/Kf8091wQJzjzfS8D6t7ZMRRmk+hEPPJ2ZcfEr7M6sKtsvTLUHgjXE+JaBwScgsbnmRPn9pR043KKDjgApKB8N4inAOQS+FZov9M/PnR8azdsx7j3Gd9dHo/xOhWDWByAiwAPX56ZCVV3jE6nAHDGr297wZ3wrHpeFCrB5MHIVOTTjYcuzKqgcwYbkBbxlBTRw9Viu3/KxVRJMzo9dceHk2PzSuAkcF7BtY0FxYZlZsSmp8ZqDv71h5uGWoyt60ZaTJL/8lkQgFMOhGY/p9VXToq76mGsyy2sEfHcByV5ihzWicRJf/vI6eUCMscAQ1D950s3iWXsIOQBAbJI/i7AF0zEDwTaR05da/rnj2F+2SsCadAivwA4C7AKZDbBfYH94X0DTbesoZW+hUoVku4XEkM4bSf1mZmeoePVP1y1kAw2+NKimeoAKI8Dei9FHRXNp0WwFZodFbmDL/WNld+9bAvJkS3wlpSXvSZKtkGzRwSnKWqzgGW0dYu/NfzWQGNBqe1N2yYGfIthQIGRBO3vzYnhzkA34iklcBowkFf6IMVspmCTQFaTvATwS2XH369oG/nOcXDW9VdDS+iGqyYrZQzZBGvAKq21YTwqIgUgz2noIz9NDPVckeMlpF7QdZ4OOEzcFIG5Lt8n0WhY+/1ISmiFf0yu9S1dK+H/CsDf70eYMH+nBy8AAAAASUVORK5CYII=" />
     <title>Todo</title>
-    <script type="module" crossorigin src="/todolist.github.io/assets/index-46882278.js"></script>
+    <script type="module" crossorigin src="/todolist.github.io/assets/index-cb7e2aa1.js"></script>
     <link rel="stylesheet" href="/todolist.github.io/assets/index-fc7e3361.css">
   </head>
   <body class="dark">
     <div id="root"></div>
     
   </body>
-  <script  src="/src/js/script.js" defer></script>
+  
 </html>
